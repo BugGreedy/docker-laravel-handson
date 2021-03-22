@@ -1,7 +1,7 @@
 # docker-laravel-handson
 
 ## LEMP環境構築用
-このディレクトリはLEMP(Laravel/Nginx/mysql/php)環境構築のために作成</br>
+このディレクトリはLEMP(Laravel/Nginx/mysql/php)環境構築のために作成した。</br>
 下記Qiita記事を参考にした。</br>
 </br>
 **【超入門】20分でLaravel開発環境を爆速構築するDockerハンズオン**</br>
