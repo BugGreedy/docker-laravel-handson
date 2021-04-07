@@ -9,27 +9,37 @@ URL : https://qiita.com/ucan-lab/items/56c9dc3cf2e6762672f4</br>
 
 実際に使用する際は下記のとおり</br>
 **GithubからリポジトリをClone**</br>
+```
 [mac] % git clone "Github上のリポジトリURL"</br>
 [mac] % cd docker-laravel-handson</br>
 [mac] % docker-compose up -d --build</br>
+```
 </br>
 http://127.0.0.1:10080 にアクセス</br>
 /work/public/../vendor/autoload.php を開くのに失敗してエラーになっていることを確認</br>
 appコンテナに入る</br>
+```
 [mac] % docker-compose exec app bash</br>
 vendorディレクトリにライブラリ群をインストール</br>
 composer.lock ファイルを参照</br>
 [app] $ composer install</br>
+```
 再びhttp://127.0.0.1:10080 にアクセスして、"500｜Server Error"と表示される事を確認</br>
 </br>
 composer install 時は .env 環境変数ファイルは作成されないので、 .env.example を元にコピーして作成</br>
+```
 [app] $ cp .env.example .env</br>
+```
 
 <!-- **新しいApp構築後保存する場合はディレクトリ名を変更してpush**</br> -->
 
 **再度Docker環境を破棄する場合は**</br>
+```
 [mac] % docker-compose down --rmi all --volumes --remove-orphans</br>
+```
 ***プロジェクトを削除するのでGUIエディタを閉じておく***</br>
+```
 [mac] % cd ..</br>
 [mac] % rm -rf docker-laravel-handson</br>
+```
 ここまでしたら再度github上のリポジトリからCloneを行う。</br>
