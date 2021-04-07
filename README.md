@@ -11,14 +11,15 @@ URL : https://qiita.com/ucan-lab/items/56c9dc3cf2e6762672f4</br>
 **GithubからリポジトリをClone**</br>
 [mac] % git clone "Github上のリポジトリURL"</br>
 [mac] % cd docker-laravel-handson</br>
-[mac] $ docker-compose up -d --build</br>
+[mac] % docker-compose up -d --build</br>
 </br>
 http://127.0.0.1:10080 にアクセス</br>
 
 **新しいApp構築後保存する場合はディレクトリ名を変更してpush**</br>
 
-**再度Docker環境を破棄する場合は**
+**再度Docker環境を破棄する場合は**</br>
 [mac] $ docker-compose down --rmi all --volumes --remove-orphans</br>
-***プロジェクトを削除するのでGUIエディタを閉じておく***
-[mac] $ cd ..</br>
-[mac] $ rm -rf docker-laravel-handson</br>
+***プロジェクトを削除するのでGUIエディタを閉じておく***</br>
+[mac] % cd ..</br>
+[mac] % rm -rf docker-laravel-handson</br>
+ここまでしたら再度github上のリポジトリからCloneを行う。</br>
