@@ -14,18 +14,18 @@ URL : https://qiita.com/ucan-lab/items/56c9dc3cf2e6762672f4</br>
 [mac] % cd docker-laravel-handson</br>
 [mac] % docker-compose up -d --build</br>
 ```
-</br>
 http://127.0.0.1:10080 にアクセス</br>
 /work/public/../vendor/autoload.php を開くのに失敗してエラーになっていることを確認</br>
 appコンテナに入る</br>
 ```
 [mac] % docker-compose exec app bash</br>
+```
 vendorディレクトリにライブラリ群をインストール</br>
 composer.lock ファイルを参照</br>
+```
 [app] $ composer install</br>
 ```
 再びhttp://127.0.0.1:10080 にアクセスして、"500｜Server Error"と表示される事を確認</br>
-</br>
 composer install 時は .env 環境変数ファイルは作成されないので、 .env.example を元にコピーして作成</br>
 ```
 [app] $ cp .env.example .env</br>
