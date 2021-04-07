@@ -18,7 +18,7 @@ http://127.0.0.1:10080 にアクセス</br>
 **新しいApp構築後保存する場合はディレクトリ名を変更してpush**</br>
 
 **再度Docker環境を破棄する場合は**</br>
-[mac] $ docker-compose down --rmi all --volumes --remove-orphans</br>
+[mac] % docker-compose down --rmi all --volumes --remove-orphans</br>
 ***プロジェクトを削除するのでGUIエディタを閉じておく***</br>
 [mac] % cd ..</br>
 [mac] % rm -rf docker-laravel-handson</br>
