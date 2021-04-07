@@ -22,8 +22,8 @@ composer.lock ファイルを参照</br>
 [app] $ composer install</br>
 再びhttp://127.0.0.1:10080 にアクセスして、"500｜Server Error"と表示される事を確認</br>
 </br>
-composer install 時は .env 環境変数ファイルは作成されないので、 .env.example を元にコピーして作成
-[app] $ cp .env.example .env
+composer install 時は .env 環境変数ファイルは作成されないので、 .env.example を元にコピーして作成</br>
+[app] $ cp .env.example .env</br>
 
 <!-- **新しいApp構築後保存する場合はディレクトリ名を変更してpush**</br> -->
 
