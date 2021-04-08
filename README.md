@@ -9,11 +9,11 @@ URL : https://qiita.com/ucan-lab/items/56c9dc3cf2e6762672f4</br>
 
 実際に使用する際は下記のとおり</br>
 
-**再度git Docker環境を破棄する場合は**</br>
+**既存のgit Docker環境を破棄する**</br>
 ```
 [mac] % docker-compose down --rmi all --volumes --remove-orphans
 ```
-***プロジェクトを削除するのでGUIエディタを閉じておく***</br>
+※プロジェクトを削除するのでGUIエディタを閉じておく</br>
 ```
 [mac] % cd ..
 [mac] % rm -rf docker-laravel-handson
