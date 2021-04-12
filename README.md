@@ -42,6 +42,25 @@ composer install 時は .env 環境変数ファイルは作成されないので
 [app] $ cp .env.example .env
 ```
 
-<!-- **新しいApp構築後保存する場合はディレクトリ名を変更してpush**</br> -->
+**新しいApp構築後保存する場合はディレクトリ名を変更し再度リモートリポジトリを作成**</br>
+リモートリポジトリへ初回コミット&プッシュ</br>
+```
+[mac] $ echo "# 新しいプロジェクト名" >> README.md
+[mac] $ git init
+[mac] $ git add README.md
+[mac] $ git commit -m "first commit"
+[mac] $ git branch -M main
+```
+リモートリポジトリ先の登録</br>
+```
+[mac] $ git remote add origin git@github.com:ユーザー名/docker-laravel-handson.git
+```
+リミーとリポジトリが正しく登録されているか確認</br>
+```
+[mac] $ git remote -v
+origin  git@github.com:ucan-lab/docker-laravel-handson.git (fetch)
+origin  git@github.com:ucan-lab/docker-laravel-handson.git (push)
 
-
+# もしリモートリポジトリ先を間違えた場合は下記のコマンドから変更できます。
+[mac] $ git remote set-url origin <リモートリポジトリ>
+```
