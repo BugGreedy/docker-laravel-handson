@@ -55,7 +55,7 @@ composer install 時は .env 環境変数ファイルは作成されないので
 ```
 [mac] $ git remote add origin git@github.com:ユーザー名/docker-laravel-handson.git
 ```
-リミーとリポジトリが正しく登録されているか確認</br>
+リモートリポジトリが正しく登録されているか確認</br>
 ```
 [mac] $ git remote -v
 origin  git@github.com:ucan-lab/docker-laravel-handson.git (fetch)
